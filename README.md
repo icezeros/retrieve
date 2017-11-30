@@ -18,6 +18,7 @@ const retrieve = new Retrieve({
     id: 'token',
     name: 'userName',
   },
+  all: false,     //true 排序后返回所有数据； false  排序后返回匹配到的数据
 });
 const test2 = [
   {

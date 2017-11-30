@@ -1,4 +1,5 @@
-const Retrieve = require('js-retrieve');
+const Retrieve = require('../index');
+// const Retrieve = require('js-retrieve');
 
 const retrieve = new Retrieve({
   fields: {
