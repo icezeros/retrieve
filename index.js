@@ -6,6 +6,7 @@ class Retrieve {
   constructor(option) {
     const tmpOption = {
       fields: {},
+      all: false,
     };
     option = _.merge({}, tmpOption, option);
     this.fields = {
@@ -135,6 +136,7 @@ class Retrieve {
         result.push(tmp);
       }
     });
+    const filter = _.filter(result, item => item.index > 0);
     return _.sortBy(result, v => -v.index);
   }
   convertStr(str) {
