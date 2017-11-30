@@ -1,0 +1,25 @@
+{
+  "name": "js-retrieve",
+  "version": "1.0.3",
+  "description": "retrieve index search",
+  "main": "index.js",
+  "scripts": {
+    "start": "index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icezeros/retrieve.git"
+  },
+  "keywords": ["retrieve", "index", "search"],
+  "author": "icezeros",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/icezeros/retrieve/issues"
+  },
+  "homepage": "https://github.com/icezeros/retrieve#readme",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "pinyin": "^2.8.3"
+  }
+}
