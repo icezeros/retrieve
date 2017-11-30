@@ -1,6 +1,6 @@
 {
   "name": "js-retrieve",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "retrieve index search",
   "main": "index.js",
   "scripts": {
