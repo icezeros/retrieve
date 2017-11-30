@@ -25,6 +25,6 @@ const test2 = [
     token: 4,
   },
 ];
-
-const result = retrieve.searchSource(test2, 'shui');
+const aa = null;
+const result = retrieve.searchSource(test2, aa);
 console.log(result);
