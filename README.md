@@ -11,26 +11,33 @@ npm install js-retrieve
 ### 示例一：
 
 ```node
-const retrieve = require('js-retrieve');
+const Retrieve = require('js-retrieve');
 
+const retrieve = new Retrieve({
+  fields: {
+    id: 'token',
+    name: 'userName',
+  },
+});
 const test2 = [
   {
-    name: '水电费',
-    id: 1,
+    userName: '水电费',
+    token: 1,
   },
   {
-    name: '发过火',
-    id: 2,
+    userName: '发过火',
+    token: 2,
   },
   {
-    name: '体温表',
-    id: 3,
+    userName: '体温表',
+    token: 3,
   },
   {
-    name: '大洪水',
-    id: 4,
+    userName: '大洪水',
+    token: 4,
   },
 ];
+
 
 const result = retrieve.searchSource(test2, 'shui');
 console.log(result);
@@ -46,26 +53,33 @@ console.log(result);
 ### 示例二：
 
 ```node
-const retrieve = require('js-retrieve');
+const Retrieve = require('js-retrieve');
 
+const retrieve = new Retrieve({
+  fields: {
+    id: 'token',
+    name: 'userName',
+  },
+});
 const test2 = [
   {
-    name: '水电费',
-    id: 1,
+    userName: '水电费',
+    token: 1,
   },
   {
-    name: '发过火',
-    id: 2,
+    userName: '发过火',
+    token: 2,
   },
   {
-    name: '体温表',
-    id: 3,
+    userName: '体温表',
+    token: 3,
   },
   {
-    name: '大洪水',
-    id: 4,
+    userName: '大洪水',
+    token: 4,
   },
 ];
+
 const dictionary = retrieve.convertDictionary(test2);
 const result = retrieve.search(dictionary, 'shui');
 console.log(result);
