@@ -137,7 +137,7 @@ class Retrieve {
       }
     });
     const filter = _.filter(result, item => item.index > 0);
-    return filter;
+    return _.sortBy(filter, v => -v.index);
   }
   convertStr(str) {
     return str.toLowerCase();
