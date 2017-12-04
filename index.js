@@ -40,7 +40,6 @@ class Retrieve {
       heteronym: true, // 启用多音字模式
       // segment: true, // 启用分词，以解决多音字问题。
       style: pinyin.STYLE_NORMAL, // 设置拼音风格
-      heteronym: true,
     });
 
     out.forEach((value, key) => {
