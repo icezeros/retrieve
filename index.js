@@ -65,8 +65,18 @@ class Retrieve {
 
     const result = [];
     data.forEach(item => {
-      const pys = that.convertPinyin(item.name);
-
+      let pys = [];
+      const reg = /^[A-Za-z\s]+$/;
+      if (reg.test(item.name)) {
+        //判断是否符合正则表达式
+        console.log('======');
+        const arr = item.name.split(' ');
+        arr.forEach(v => {
+          pys.push([v]);
+        });
+      } else {
+        pys = that.convertPinyin(item.name);
+      }
       const tmpArr = that.convertArray(pys);
 
       tmpArr.forEach(v => {
